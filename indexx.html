@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background-color: #172554;
+            color: white;
+        }
+
+        nav h2 {
+            font-size: 26px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #60a5fa;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            padding: 14px 30px;
+            border: none;
+            border-radius: 6px;
+            background-color: white;
+            color: #1e3a8a;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #dbeafe;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            margin-top: 30px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h2>MyWebsite</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to My Website</h1>
+        <p>Discover new ideas, explore opportunities and achieve more.</p>
+        <button onclick="alert('Welcome to our website!')">
+            Get Started
+        </button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="services">
+        <h2>What We Offer</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Quality</h3>
+                <p>We focus on providing high-quality solutions
+                and excellent experiences.</p>
+            </div>
+
+            <div class="card">
+                <h3>Innovation</h3>
+                <p>We bring creative ideas and modern solutions
+                to help you grow.</p>
+            </div>
+
+            <div class="card">
+                <h3>Support</h3>
+                <p>We are always ready to help you with your
+                questions and requirements.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="features" id="about">
+        <h2>About Us</h2>
+        <p>We aim to make technology simple, useful and accessible
+        to everyone.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 MyWebsite. All Rights Reserved.</p>
+        <p>Contact: info@mywebsite.com</p>
+    </footer>
+
+</body>
+</html>
